@@ -7,13 +7,13 @@
     <script type="text/javascript" src="https://cdn.pannellum.org/2.3/pannellum.js"></script>
     <style>
        #panorama {
-           width: 600px;
-           height: 400px;
+           width: 1000px;
+           height: 700px;
        }
        .custom-hotspot {
-           height: 50px;
-           width: 50px;
-           background: #f00;
+           height: 10px;
+           width: 10px;
+           background: white;
        }
        div.custom-tooltip span {
            visibility: hidden;
@@ -50,28 +50,28 @@
       // Create viewer
       viewer = pannellum.viewer('panorama', ﻿{
           "type": "equirectangular",
-          "panorama": "alma.jpg",
+          "panorama": "sky.jpg",
           "hotSpots": [
               {
                   "pitch": 30.1,
                   "yaw": 100,
                   "cssClass": "custom-hotspot",
                   "createTooltipFunc": hotspot,
-                  "createTooltipArgs": "Star Name"
+                  "createTooltipArgs": "Star 1"
               },
               {
                   "pitch": -9.4,
                   "yaw": 222.6,
                   "cssClass": "custom-hotspot",
                   "createTooltipFunc": hotspot,
-                  "createTooltipArgs": "Art Museum Drive"
+                  "createTooltipArgs": "Star 3"
               },
               {
                   "pitch": -0.9,
                   "yaw": 144.4,
                   "cssClass": "custom-hotspot",
                   "createTooltipFunc": hotspot,
-                  "createTooltipArgs": "North Charles Street"
+                  "createTooltipArgs": "Star 2"
               }
           ]
       });

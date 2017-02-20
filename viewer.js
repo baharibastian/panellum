@@ -1,7 +1,7 @@
 // Create viewer
 viewer = pannellum.viewer('panorama', ﻿{
     "type": "equirectangular",
-    "panorama": "/images/bma-1.jpg",
+    "panorama": "sky.jpg",
     "hotSpots": [
         {
             "pitch": 14.1,
